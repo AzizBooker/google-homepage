@@ -1,3 +1,9 @@
+:root{
+--grayColor: rgb(90, 84, 84);
+--whiteColor: #ffffff;
+
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -17,20 +23,25 @@
 }
 #searchbar{
     grid-area: searchbar;
-    height: 35px;
+    height: 37px;
     width: 70%;
     margin-top: 20px;
     justify-self: center;
-    border-radius: 7px;
+    border-radius: 18px;
     border-width: 1px;
     border-color:  rgb(0, 0, 0 ,0.4);
+    color: var(grayColor)
     
+}
+#searchbar:focus{
+    color: black;
+    border-color:  rgb(0, 0, 0 ,0.4);
 }
 .container .button{
     grid-area: button;
     height: 30%;
-    width: 40%;
-    border-radius: 4px;
+    width: 45%;
+    border-radius: 5px;
     border: 1px solid transparent;
     justify-self: center;
     
@@ -38,6 +49,34 @@
 .button button{
     margin-left: 10%;
     margin-right:10%;
+    width: 120px;
+    border-radius: 4px;
     height: 40px;
+    border: none;
+    outline-color:  rgb(90, 84, 84 ,0.4);
     
+}
+
+
+.navbar{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.navbar ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+
+}
+.navbar li{
+    display: inline;
+    padding-left: 20px;
+    
+}
+.navbar a{
+    
+    color:   rgb(90, 84, 84);
+    text-decoration: none;
+    font-size: 15px;
 }
