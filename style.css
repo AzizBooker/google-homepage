@@ -32,6 +32,17 @@
     border-color:  rgb(0, 0, 0 ,0.4);
     color: var(grayColor)
     
+    
+    
+    
+}
+ input[type=text]{
+    background-image: url(search-interface-symbol.svg);
+    background-position: 10px 50%;
+    background-size: 2%;
+    background-repeat: no-repeat;
+    outline: none;
+    Margin-left: 4%;;
 }
 #searchbar:focus{
     color: black;
